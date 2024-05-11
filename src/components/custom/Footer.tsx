@@ -1,3 +1,4 @@
+import Link from "next/link";
 import React from "react";
 
 const Footer = () => {
@@ -28,25 +29,25 @@ const Footer = () => {
                 </h2>
                 <ul className="text-gray-500 dark:text-gray-400 font-medium">
                   <li className="mb-4">
-                    <a href="https://flowbite.com/" className="hover:underline">
+                    <Link href="/" className="hover:underline">
                       Home
-                    </a>
+                    </Link>
                   </li>
                   <li className="mb-4">
-                    <a
-                      href="https://tailwindcss.com/"
+                    <Link
+                      href="/service_and_project"
                       className="hover:underline"
                     >
                       Service & Project
-                    </a>
+                    </Link>
                   </li>
                   <li>
-                    <a
-                      href="https://tailwindcss.com/"
+                    <Link
+                      href="/about"
                       className="hover:underline"
                     >
                       About
-                    </a>
+                    </Link>
                   </li>
                 </ul>
               </div>
@@ -58,7 +59,8 @@ const Footer = () => {
                   <li className="mb-4">
                     <a
                       href="https://github.com/TimTechTitans"
-                      className="hover:underline "
+                      className="hover:underline"
+                      target="_blank"
                     >
                       Github
                     </a>
@@ -67,6 +69,7 @@ const Footer = () => {
                     <a
                       href="https://www.youtube.com/channel/UCDHjdGU4sZg3sA35-iagQkA"
                       className="hover:underline"
+                      target="_blank"
                     >
                       Youtube
                     </a>
