@@ -14,7 +14,7 @@ const LoadingScreen = () => {
       } gap-3`}
     >
       <Image
-        src="/assets/icons/ICON.png"
+        src="/assets/icons/FAVICON.png"
         width={100}
         height={100}
         alt="icon-splash"
