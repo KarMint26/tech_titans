@@ -69,7 +69,7 @@ export default function Navbar({
           <div>Home</div>
         </Link>
         <Link
-          href="/tour"
+          href="/services"
           onClick={() => setActiveNav(false)}
           className="list-menu text-main flex py-2 pl-[25%] sm:pl-[35%] items-center space-x-2 sm:space-x-4 uppercase font-semibold"
         >
@@ -77,7 +77,7 @@ export default function Navbar({
           <div>Services</div>
         </Link>
         <Link
-          href="/culture"
+          href="/projects"
           onClick={() => setActiveNav(false)}
           className="list-menu text-main flex py-2 pl-[25%] sm:pl-[35%] items-center space-x-2 sm:space-x-4 uppercase font-semibold"
         >
@@ -85,7 +85,7 @@ export default function Navbar({
           <div>Projects</div>
         </Link>
         <Link
-          href="/article"
+          href="/about"
           onClick={() => setActiveNav(false)}
           className="list-menu text-main flex py-2 pl-[25%] sm:pl-[35%] items-center space-x-2 sm:space-x-4 uppercase font-semibold"
         >
