@@ -55,7 +55,7 @@ export default function Navbar({
         <Link
           href="/"
           onClick={() => setActiveNav(false)}
-          className="list-menu text-main flex py-2 pl-[25%] sm:pl-[35%] items-center space-x-2 sm:space-x-4 uppercase font-semibold"
+          className="list-menu text-main flex py-2 pl-[15%] sm:pl-[35%] items-center space-x-2 sm:space-x-4 uppercase font-semibold"
         >
           <FaHome className="text-lg" />
           <div>Home</div>
@@ -63,7 +63,7 @@ export default function Navbar({
         <Link
           href="/service_and_project"
           onClick={() => setActiveNav(false)}
-          className="list-menu text-main flex py-2 pl-[25%] sm:pl-[35%] items-center space-x-2 sm:space-x-4 uppercase font-semibold"
+          className="list-menu text-main flex py-2 pl-[15%] sm:pl-[35%] items-center space-x-2 sm:space-x-4 uppercase font-semibold"
         >
           <MdWork className="text-lg" />
           <div>Service & Projects</div>
@@ -71,7 +71,7 @@ export default function Navbar({
         <Link
           href="/about"
           onClick={() => setActiveNav(false)}
-          className="list-menu text-main flex py-2 pl-[25%] sm:pl-[35%] items-center space-x-2 sm:space-x-4 uppercase font-semibold"
+          className="list-menu text-main flex py-2 pl-[15%] sm:pl-[35%] items-center space-x-2 sm:space-x-4 uppercase font-semibold"
         >
           <FaUsersGear className="text-lg" />
           <div>About</div>

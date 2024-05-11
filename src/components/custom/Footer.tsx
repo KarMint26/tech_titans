@@ -74,11 +74,11 @@ const Footer = () => {
                 </ul>
               </div>
 
-              <div>
+              <div className="w-full">
                 <h2 className="mb-6 text-sm font-semibold text-gray-900 uppercase dark:text-white">
                   Address
                 </h2>
-                <ul className="text-gray-500 dark:text-gray-400 font-medium">
+                <ul className="w-full text-gray-500 dark:text-gray-400 font-medium">
                   <li>
                     <iframe
                       src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3961.1849606174446!2d109.10501737461286!3d-6.868427167200711!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e6fb9e2805c1c1b%3A0xe3e61e1ae59106ff!2sPoliteknik%20Harapan%20Bersama!5e0!3m2!1sen!2sid!4v1715447405416!5m2!1sen!2sid"
@@ -88,7 +88,7 @@ const Footer = () => {
                       allowFullScreen
                       loading="lazy"
                       referrerPolicy="no-referrer-when-downgrade"
-                      className="w-[340px] sm:w-full lg:w-auto"
+                      className="w-[320px] sm:w-full lg:w-auto"
                     ></iframe>
                   </li>
                 </ul>
