@@ -1,5 +1,6 @@
 import { Metadata } from 'next'
 import React from 'react'
+import AboutPage from './AboutPage'
 
 export const metadata: Metadata = {
   title: "ABOUT",
@@ -9,7 +10,9 @@ export const metadata: Metadata = {
 
 const About = () => {
   return (
-    <div>About</div>
+    <React.Fragment>
+      <AboutPage />
+    </React.Fragment>
   )
 }
 
