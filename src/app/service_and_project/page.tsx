@@ -1,6 +1,6 @@
 import { Metadata } from "next";
 import React from "react";
-import ServicesPage from "./ServicesPage";
+import ServiceAndProjectPage from "./ServicesPage";
 
 export const metadata: Metadata = {
   title: "SERVICES",
@@ -8,12 +8,12 @@ export const metadata: Metadata = {
     "Provides IT Solutions Services for Website and Mobile Apps Development and Consulting Related to IT Products.",
 };
 
-const Services = () => {
+const ServiceProject = () => {
   return (
     <React.Fragment>
-      <ServicesPage />
+      <ServiceAndProjectPage />
     </React.Fragment>
   );
 };
 
-export default Services;
+export default ServiceProject;

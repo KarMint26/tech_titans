@@ -61,20 +61,12 @@ export default function Navbar({
           <div>Home</div>
         </Link>
         <Link
-          href="/services"
-          onClick={() => setActiveNav(false)}
-          className="list-menu text-main flex py-2 pl-[25%] sm:pl-[35%] items-center space-x-2 sm:space-x-4 uppercase font-semibold"
-        >
-          <MdOutlineMiscellaneousServices className="text-lg" />
-          <div>Services</div>
-        </Link>
-        <Link
-          href="/projects"
+          href="/service_and_project"
           onClick={() => setActiveNav(false)}
           className="list-menu text-main flex py-2 pl-[25%] sm:pl-[35%] items-center space-x-2 sm:space-x-4 uppercase font-semibold"
         >
           <MdWork className="text-lg" />
-          <div>Projects</div>
+          <div>Service & Projects</div>
         </Link>
         <Link
           href="/about"
@@ -116,14 +108,8 @@ export default function Navbar({
           />
           <ListItem
             activeLink={activeLink}
-            text={"Services"}
-            href="/services"
-            icon={<MdOutlineMiscellaneousServices className="text-xl" />}
-          />
-          <ListItem
-            activeLink={activeLink}
-            text={"Projects"}
-            href="/projects"
+            text={"Service & Project"}
+            href="/service_and_project"
             icon={<MdWork className="text-xl" />}
           />
           <ListItem

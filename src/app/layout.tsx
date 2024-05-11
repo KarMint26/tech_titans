@@ -4,6 +4,8 @@ import NextTopLoader from "nextjs-toploader";
 import { ThemeProvider } from "@/components/theme-provider";
 import "./globals.css";
 import Wrapper from "@/components/custom/Wrapper";
+import Footer from "@/components/custom/Footer";
+import BtnBackTop from "@/components/custom/BtnBackTop";
 
 const APP_NAME = "TECH TITANS";
 const APP_DEFAULT_TITLE = "TECH TITANS";
@@ -78,6 +80,8 @@ export default function RootLayout({
           />
           <Wrapper />
           {children}
+          <Footer />
+          <BtnBackTop />
         </ThemeProvider>
       </body>
     </html>
