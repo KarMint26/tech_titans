@@ -93,7 +93,7 @@ export default function Navbar({
               src={"/assets/icons/ICON.png"}
               width={200}
               height={200}
-              alt="explore nias icon"
+              alt="Tech Titans Logo"
               className="scale-[0.65] sm:scale-75 lg:scale-100 -translate-x-4 sm:translate-x-0"
             />
           </Link>
