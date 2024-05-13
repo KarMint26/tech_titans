@@ -155,7 +155,7 @@ const AboutPage = () => {
       {/* Our Team Section */}
       <section
         id="our_team"
-        className="our_team w-full h-fit pt-10 sm:pt-14 lg:pt-16 flex flex-col justify-center items-center bg-main pb-12 sm:pb-16"
+        className="our_team w-full h-fit pt-10 sm:pt-14 lg:pt-16 flex flex-col justify-center items-center bg-blue-900 pb-12 sm:pb-16"
       >
         <h1 className="font-bold text-3xl sm:text-4xl lg:text-5xl text-white">
           Our Teams
