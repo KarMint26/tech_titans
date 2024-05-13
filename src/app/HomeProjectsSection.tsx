@@ -9,12 +9,12 @@ import React from "react";
 
 function HomeProjectsSection() {
   return (
-    <div className="w-full h-fit bg-main py-5 md:py-10 lg:py-15 px-8 sm:px-10 lg:px-14 flex flex-col justify-center">
+    <div className="w-full h-fit bg-main py-10 md:py-10 lg:py-15 px-8 sm:px-10 lg:px-14 flex flex-col justify-center">
       <h2 className="text-center text-2xl md:text-3xl lg:text-4xl font-semibold text-white">
         Our Project
       </h2>
 
-      <div className="flex mx-auto my-5 justify-center w-[30rem]">
+      <div className="flex mx-auto my-5 justify-center w-full md:w-[30rem]">
         <p className="text-white text-center">
           Explore our IT consulting services, from UI/UX Design, mobile
           application and website application. Let's create amazing digital
