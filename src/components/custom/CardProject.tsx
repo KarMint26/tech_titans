@@ -30,7 +30,7 @@ function CardProject({
         </div>
         <Link
           href={link}
-          className="p-3 rotate-[300deg] rounded-full bg-white text-center flex items-center justify-center text-3xl"
+          className="p-3 rotate-[300deg] transition-all animate-in hover:rotate-0 rounded-full bg-white text-center flex items-center justify-center text-3xl"
         >
           <FaArrowRight />
         </Link>

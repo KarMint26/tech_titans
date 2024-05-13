@@ -44,7 +44,7 @@ function HomeProjectsSection() {
         />
       </div>
       <Link
-        href="/projects"
+        href="/service_and_project"
         className="px-3 py-3 rounded-full m-auto bg-white inline-flex justify-between gap-3 items-center font-semibold"
       >
         <span className="pl-3">See More Project</span>{" "}

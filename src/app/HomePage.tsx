@@ -3,6 +3,7 @@ import HomeHeroSection from "./HomeHeroSection";
 import HomeServicesSection from "./HomeServicesSection";
 import HomeClientsSection from "./HomeClientsSection";
 import HomeProjectsSection from "./HomeProjectsSection";
+import HomeTestimonialsSection from "./HomeTestimonialsSection";
 
 const HomePage = () => {
   return (
@@ -13,6 +14,7 @@ const HomePage = () => {
       <HomeServicesSection />
       <HomeClientsSection />
       <HomeProjectsSection />
+      <HomeTestimonialsSection />
     </>
   );
 };

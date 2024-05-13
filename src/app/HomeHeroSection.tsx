@@ -1,6 +1,7 @@
 import React from "react";
 import { ArrowRight } from "lucide-react";
 import Image from "next/image";
+import Link from "next/link";
 
 const HomeHeroSection = () => {
   return (
@@ -15,9 +16,12 @@ const HomeHeroSection = () => {
             many project we have done with our IT solutions
           </p>
           <div className="flex gap-5">
-            <button className="px-5 py-3 bg-main text-white rounded-xl font-semibold">
+            <Link
+              href={"/about"}
+              className="px-5 py-3 bg-main text-white rounded-xl font-semibold"
+            >
               Read more
-            </button>
+            </Link>
             <button className="text-main px-5 py-3 font-semibold flex gap-2">
               See Our Projects <ArrowRight />
             </button>
