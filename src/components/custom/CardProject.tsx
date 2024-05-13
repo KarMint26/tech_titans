@@ -1,0 +1,42 @@
+import Image from "next/image";
+import Link from "next/link";
+import React from "react";
+import { FaArrowRight } from "react-icons/fa6";
+
+function CardProject({
+  name,
+  image,
+  category,
+  link,
+}: {
+  name: string;
+  image: string;
+  category: string;
+  link: string;
+}) {
+  return (
+    <div className="w-full md:w-[30rem] p-3">
+      <Image
+        src={image}
+        alt="project 1"
+        width={300}
+        height={200}
+        className="w-full object-center"
+      />
+      <div className="flex items-center justify-between py-5">
+        <div className="text-white">
+          <h4 className="text-2xl font-semibold mb-5 mt-5">{name}</h4>
+          <p>{category}</p>
+        </div>
+        <Link
+          href={link}
+          className="p-3 rotate-[300deg] rounded-full bg-white text-center flex items-center justify-center text-3xl"
+        >
+          <FaArrowRight />
+        </Link>
+      </div>
+    </div>
+  );
+}
+
+export default CardProject;
