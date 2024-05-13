@@ -6,6 +6,7 @@ import "./globals.css";
 import Wrapper from "@/components/custom/Wrapper";
 import Footer from "@/components/custom/Footer";
 import BtnBackTop from "@/components/custom/BtnBackTop";
+import WABtn from "@/components/custom/WABtn";
 
 const APP_NAME = "TECH TITANS";
 const APP_DEFAULT_TITLE = "TECH TITANS";
@@ -82,6 +83,7 @@ export default function RootLayout({
           {children}
           <Footer />
           <BtnBackTop />
+          <WABtn />
         </ThemeProvider>
       </body>
     </html>

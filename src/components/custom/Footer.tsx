@@ -4,7 +4,7 @@ import React from "react";
 const Footer = () => {
   return (
     <React.Fragment>
-      <footer className="bg-white dark:bg-gray-900">
+      <footer className="bg-slate-100 dark:bg-gray-800">
         <div className="mx-auto w-full max-w-screen-xl p-4 py-6 lg:py-8">
           <div className="lg:flex lg:justify-between">
             <div className="mb-6 lg:mb-0">
@@ -84,7 +84,7 @@ const Footer = () => {
                 <ul className="w-full text-gray-500 dark:text-gray-400 font-medium">
                   <li>
                     <iframe
-                      src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3961.1849606174446!2d109.10501737461286!3d-6.868427167200711!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e6fb9e2805c1c1b%3A0xe3e61e1ae59106ff!2sPoliteknik%20Harapan%20Bersama!5e0!3m2!1sen!2sid!4v1715447405416!5m2!1sen!2sid"
+                      src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3152.343447487494!2d144.9787625773499!3d-37.805423671613944!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6ad642e0ab25c14b%3A0xc09a0eb2e92206ff!2s100%20Smith%20St%2C%20Collingwood%20VIC%203066%2C%20Australia!5e0!3m2!1sen!2sid!4v1715612950094!5m2!1sen!2sid"
                       width="250"
                       height="200"
                       style={{ border: "none" }}
