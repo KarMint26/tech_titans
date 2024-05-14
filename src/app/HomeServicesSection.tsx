@@ -1,3 +1,4 @@
+import CardCountProjcets from "@/components/custom/CardCountProjcets";
 import ItemBoxService from "@/components/custom/ItemBoxService";
 import Image from "next/image";
 import Link from "next/link";
@@ -35,27 +36,7 @@ function HomeServicesSection() {
           height={600}
         />
       </div>
-      <div className="w-full bg-white flex justify-between items-center px-6 py-4 rounded-xl flex-wrap mt-5 gap-5">
-        <ItemBoxService
-          name="UI/UX Design"
-          count={25}
-          icon={<GiPencilBrush />}
-        />
-
-        <ItemBoxService
-          name="Mobile"
-          count={15}
-          icon={<SlScreenSmartphone />}
-        />
-
-        <ItemBoxService name="Website" count={35} icon={<TbWorld />} />
-
-        <ItemBoxService
-          name="Total Project"
-          count={70}
-          icon={<FaRegListAlt />}
-        />
-      </div>
+      <CardCountProjcets />
     </div>
   );
 }

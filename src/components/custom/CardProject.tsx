@@ -25,7 +25,9 @@ function CardProject({
       />
       <div className="flex items-center justify-between py-5">
         <div className="text-white">
-          <h4 className="text-2xl font-semibold mb-5 mt-5">{name}</h4>
+          <h4 className="text-xl md:text-2xl font-semibold mb-5 mt-5">
+            {name}
+          </h4>
           <p>{category}</p>
         </div>
         <Link
