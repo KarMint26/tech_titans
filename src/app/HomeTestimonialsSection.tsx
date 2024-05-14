@@ -1,6 +1,6 @@
 "use client";
 import Image from "next/image";
-import React, { useEffect } from "react";
+import React from "react";
 
 interface ITestimonial {
   id: number;
@@ -59,10 +59,6 @@ function HomeTestimonialsSection() {
     setCount((prev) => (prev += 1));
   };
 
-  useEffect(() => {
-    console.log(testimony);
-  }, [testimony]);
-
   return (
     <div className="w-full px-8 sm:px-15 lg:px-20 py-12 sm:py-16 bg-white dark:bg-gray-900">
       <h2 className="text-2xl md:text-3xl text-center lg:text-4xl font-semibold">
@@ -91,7 +87,7 @@ function HomeTestimonialsSection() {
                   <p className="text-blue-200 ">{testimony.title}</p>
                 </div>
 
-                <p className="mt-4 text-lg leading-relaxed text-white md:text-xl">
+                <p className="mt-4 leading-relaxed text-white md:text-xl">
                   {testimony.description}
                 </p>
 
