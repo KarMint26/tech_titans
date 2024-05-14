@@ -40,6 +40,8 @@ function HomeTestimonialsSection() {
   const [testimony, setTestimony] = React.useState<ITestimonial>(
     testimonies[0]
   );
+  const [count, setCount] = React.useState<number>(0);
+
   const handlePrev = () => {
     const newIndex =
       (testimony.id - 2 + testimonies.length) % testimonies.length;
@@ -47,8 +49,14 @@ function HomeTestimonialsSection() {
   };
 
   const handleNext = () => {
-    const newIndex = (testimony.id + 1) % testimonies.length;
-    setTestimony(testimonies[newIndex]);
+    if (count === 2) {
+      setTestimony(testimonies[0]);
+      setCount(0);
+      return;
+    }
+
+    setTestimony(testimonies[count + 1]);
+    setCount((prev) => (prev += 1));
   };
 
   useEffect(() => {
@@ -56,22 +64,22 @@ function HomeTestimonialsSection() {
   }, [testimony]);
 
   return (
-    <div className="w-full px-8 sm:px-15 lg:px-20 py-12 sm:py-16 bg-white">
+    <div className="w-full px-8 sm:px-15 lg:px-20 py-12 sm:py-16 bg-white dark:bg-gray-900">
       <h2 className="text-2xl md:text-3xl text-center lg:text-4xl font-semibold">
         Testimonials
       </h2>
-      <p className="text-center mt-3">What Our Clients Saying</p>
-      <section className="bg-white dark:bg-gray-900">
-        <div className="max-w-6xl px-6 py-10 mx-auto">
+      <p className="text-center mt-3">What Our Clients Says</p>
+      <section>
+        <div className="max-w-6xl md:px-5 lg:px-6 py-10 mx-auto">
           <main className="relative z-20 w-full mt-8 md:flex md:items-center xl:mt-12">
-            <div className="absolute w-full bg-blue-600 -z-10 md:h-96 rounded-2xl"></div>
+            <div className="absolute w-full bg-main -z-10 md:h-[29rem] lg:h-96 rounded-2xl"></div>
 
-            <div className="w-full p-6 bg-blue-600 md:flex md:items-center rounded-2xl md:bg-transparent md:p-0 lg:px-12 md:justify-evenly">
+            <div className="w-full p-6 bg-main lg:flex md:items-center rounded-2xl md:bg-transparent md:p-0 lg:px-12 md:justify-evenly">
               <Image
-                className="h-24 w-24 md:mx-6 rounded-full object-cover shadow-md md:h-[32rem] md:w-80 lg:h-[36rem] lg:w-[26rem] md:rounded-2xl"
+                className="h-24 w-24 md:mx-6 rounded-full object-cover shadow-md lg:h-[36rem] lg:w-[26rem] md:rounded-2xl"
                 src={testimony.image}
-                width={100}
-                height={100}
+                width={600}
+                height={600}
                 alt="client photo"
               />
 
