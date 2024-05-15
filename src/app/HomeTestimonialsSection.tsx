@@ -26,7 +26,7 @@ function HomeTestimonialsSection() {
       image: "/assets/home/testimonial/satya.jpg",
       description:
         "“Tech Titans is one of the best IT consulting companies I've come across. They have a deep understanding of technology and business, and they are able to translate that understanding into practical and effective solutions. I really enjoyed working with Tech Titans and I hope to continue working with them in the future.”",
-      title: "Chief of Execute - Google",
+      title: "Chief of Execute - Microsoft",
     },
     {
       id: 3,
@@ -34,7 +34,7 @@ function HomeTestimonialsSection() {
       image: "/assets/home/testimonial/william.png",
       description:
         "“Tech Titans is a strategic partner of Tokopedia. They have helped us build and improve our e-commerce platform to become the most popular platform in Indonesia. Their team really understands the needs of the e-commerce industry, and they always provide the right solutions to help us grow. I highly recommend Tech Titans to all e-commerce companies who want to boost their business.”",
-      title: "Chief of Execute - Google",
+      title: "Chief of Execute - Tokopedia",
     },
   ];
   const [testimony, setTestimony] = React.useState<ITestimonial>(
