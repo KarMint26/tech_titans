@@ -42,10 +42,7 @@ const Footer = () => {
                     </Link>
                   </li>
                   <li>
-                    <Link
-                      href="/about"
-                      className="hover:underline"
-                    >
+                    <Link href="/about" className="hover:underline">
                       About
                     </Link>
                   </li>
@@ -65,13 +62,31 @@ const Footer = () => {
                       Github
                     </a>
                   </li>
-                  <li>
+                  <li className="mb-4">
                     <a
                       href="https://www.youtube.com/channel/UCDHjdGU4sZg3sA35-iagQkA"
                       className="hover:underline"
                       target="_blank"
                     >
                       Youtube
+                    </a>
+                  </li>
+                  <li className="mb-4">
+                    <a
+                      href="https://www.facebook.com/people/Tech-Titans/61556895187086"
+                      className="hover:underline"
+                      target="_blank"
+                    >
+                      Facebook
+                    </a>
+                  </li>
+                  <li className="mb-4">
+                    <a
+                      href="https://instagram.com/tim_techtitans"
+                      className="hover:underline"
+                      target="_blank"
+                    >
+                      Instagram
                     </a>
                   </li>
                 </ul>
@@ -109,7 +124,7 @@ const Footer = () => {
             </span>
             <div className="flex mt-4 sm:justify-center sm:mt-0">
               <a
-                href="#"
+                href="https://www.facebook.com/people/Tech-Titans/61556895187086"
                 className="text-gray-500 hover:text-gray-900 dark:hover:text-white"
               >
                 <svg
@@ -162,7 +177,7 @@ const Footer = () => {
                 <span className="sr-only">Twitter page</span>
               </a>
               <a
-                href="#"
+                href="https://github.com/TimTechTitans"
                 className="text-gray-500 hover:text-gray-900 dark:hover:text-white ms-5"
               >
                 <svg
