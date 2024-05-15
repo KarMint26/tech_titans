@@ -38,14 +38,14 @@ const dataProjects = [
     id: 4,
     name: "SquareUp - Digital Product Studio",
     image: "/assets/services/mobile/su.png",
-    category: "Mobile",
+    category: "mobile",
     link: "https://www.figma.com/design/CGfkw0fFCGAJOwJrFT0E1G/SquareUp---Digital-Product-Studio-(Community)?node-id=3%3A53&t=K1UKfuJjHG3fg4HA-1",
   },
   {
     id: 5,
     name: "Go umkm",
     image: "/assets/services/mobile/gu.png",
-    category: "Mobile",
+    category: "mobile",
     link: "https://www.figma.com/design/d7boZ5o5auyLLk4cJTGTrK/GO-UMKM?node-id=1641%3A5443&t=LM3vgYeZvU6wE6RJ-1",
   },
   {
