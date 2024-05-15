@@ -43,9 +43,14 @@ function HomeTestimonialsSection() {
   const [count, setCount] = React.useState<number>(0);
 
   const handlePrev = () => {
-    const newIndex =
-      (testimony.id - 2 + testimonies.length) % testimonies.length;
-    setTestimony(testimonies[newIndex]);
+    if (count === 0) {
+      setTestimony(testimonies[2]);
+      setCount(2);
+      return;
+    }
+
+    setTestimony(testimonies[count - 1]);
+    setCount((prev) => (prev -= 1));
   };
 
   const handleNext = () => {
