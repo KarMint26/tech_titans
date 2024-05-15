@@ -21,7 +21,7 @@ const dataProjects = [
   {
     id: 3,
     name: "Tech Titans IT solution",
-    image: "/assets/services/uiux/tt.jpg",
+    image: "/assets/services/uiux/ttt.png",
     category: "UIUX",
     link: "https://www.figma.com/design/UynMczGUHYMd8cS0vMXjT6/TechTitans---IT-Solutions?node-id=0%3A1&t=DNVZezD95beSfNPg-1",
   },
