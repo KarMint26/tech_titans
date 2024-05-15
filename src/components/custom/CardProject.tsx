@@ -1,7 +1,9 @@
 import Image from "next/image";
 import Link from "next/link";
 import React from "react";
-import { FaArrowRight } from "react-icons/fa6";
+import { BsBrowserChrome } from "react-icons/bs";
+import { FaArrowRight, FaMobileScreen } from "react-icons/fa6";
+import { IoLogoFigma } from "react-icons/io5";
 
 function CardProject({
   name,
@@ -28,7 +30,7 @@ function CardProject({
           <h4 className="text-xl md:text-2xl font-semibold mb-5 mt-5">
             {name}
           </h4>
-          <p>{category}</p>
+          <div className="flex items-center gap-3">{category == "Website" ? <BsBrowserChrome /> : category == "mobile" ? <FaMobileScreen /> : <IoLogoFigma />} {category}</div>
         </div>
         <Link
           href={link}
