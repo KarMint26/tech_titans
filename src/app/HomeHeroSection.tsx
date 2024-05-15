@@ -8,7 +8,7 @@ const HomeHeroSection = () => {
     <React.Fragment>
       <div className="w-full flex justify-between items-center flex-col sm:flex-row">
         <div className="md:w-[150rem] lg:w-auto">
-          <p className="uppercase text-main font-semibold">Welcome to tech titans</p>
+          <p className="uppercase font-semibold">Welcome to tech titans</p>
           <h1 className="text-3xl sm:text-4xl lg:text-6xl uppercase font-semibold my-3 sm:my-5">
             Best For <br /> <span className="text-main">it solutions</span>
           </h1>
