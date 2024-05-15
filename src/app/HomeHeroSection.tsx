@@ -15,7 +15,7 @@ const HomeHeroSection = () => {
           <p className=" mb-7 capitalize">
             many project we have done with our IT solutions
           </p>
-          <div className="flex gap-5">
+          <div className="flex gap-2 sm:gap-5">
             <Link
               href={"/about"}
               className="px-5 py-3 bg-main text-white rounded-xl font-semibold"
@@ -41,7 +41,7 @@ const HomeHeroSection = () => {
           <Image
             src="/assets/home/hero-home.png"
             alt="hero image"
-            className="scale-90 sm:scale-75 my-10 sm:my-0 lg:scale-100"
+            className="scale-90 sm:scale-[0.85] my-10 sm:my-0 lg:scale-100"
             width={600}
             height={600}
           />

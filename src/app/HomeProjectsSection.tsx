@@ -29,9 +29,9 @@ const dataProjects = [
 
 function HomeProjectsSection() {
   return (
-    <div className="w-full h-fit bg-main py-10 md:py-10 lg:py-15 px-8 sm:px-10 lg:px-14 flex flex-col justify-center">
+    <div className="w-full h-fit bg-blue-900 py-10 md:py-10 lg:py-15 px-8 sm:px-10 lg:px-14 flex flex-col justify-center">
       <h2 className="text-center text-2xl md:text-3xl lg:text-4xl font-semibold text-white">
-        Our Project
+        Our Projects
       </h2>
 
       <div className="flex mx-auto my-5 justify-center w-full md:w-[30rem]">

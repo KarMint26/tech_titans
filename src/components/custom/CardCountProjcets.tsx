@@ -8,7 +8,7 @@ import { GiPencilBrush } from "react-icons/gi";
 function CardCountProjcets({ customClass }: { customClass?: string }) {
   return (
     <div
-      className={`w-full bg-white flex border border-slate-300 justify-between items-center px-6 py-4 rounded-xl shadow flex-wrap mt-5 gap-5 ${customClass} `}
+      className={`w-full dark:bg-gray-700 dark:border-slate-900 bg-white flex border border-slate-300 justify-between items-center px-6 lg:px-12 py-4 rounded-xl shadow flex-wrap mt-5 gap-5 ${customClass} `}
     >
       <ItemBoxService name="UI/UX Design" count={25} icon={<GiPencilBrush />} />
 

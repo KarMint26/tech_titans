@@ -5,7 +5,7 @@ function HomeClientsSection() {
   return (
     <div className="w-full mt-5 md:mt-10 lg:mt-15  mb-10 md:mb-15 lg:mb-20">
       <h2 className="text-center text-2xl md:text-3xl lg:text-4xl font-semibold">
-        Our <span className="text-main">Client</span>
+        Our <span className="text-main">Clients</span>
       </h2>
       <div className="w-full flex items-center overscroll-x-auto md:px-10 lg:px-14 justify-between flex-wrap my-3 sm:my-5 md:my-8 lg:my-10">
         <Image

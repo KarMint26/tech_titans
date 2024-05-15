@@ -13,7 +13,7 @@ const ourTeams: ourTeamsType[] = [
   {
     id: 1,
     name: "Henry Schultz",
-    position: "Chief Executive Office",
+    position: "Chief Executive Officer",
     img_url: "/assets/about/team-1.png",
   },
   {

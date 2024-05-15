@@ -126,17 +126,17 @@ const ServiceAndProjectPage = () => {
       {/* services */}
       <div className="w-full h-fit px-8 sm:px-10 lg:px-14">
         <div className="w-full my-5 md:my-10">
-          <p className="text-center font-semibold">Servcies</p>
+          <p className="text-center font-semibold text-base sm:text-xl lg:text-2xl">Services</p>
           <h2 className="text-xl md:text-3xl text-center lg:text-4xl font-semibold">
             <span className="text-main">Start Exploring.</span> Good things are
-            waiting for you.
+            <br className="sm:inline-block lg:hidden hidden" /> waiting for you.
           </h2>
         </div>
         <div className="w-full flex gap-5 lg:gap-10 flex-wrap justify-center">
           <CardServices />
         </div>
       </div>
-      <div className="w-full mt-10 md:mt-20 py-10 md:py-20 px-8 sm:px-10 lg:px-14 bg-main relative">
+      <div className="w-full mt-10 md:mt-20 py-10 md:py-20 px-8 sm:px-10 lg:px-14 bg-blue-900 relative">
         <CardCountProjcets customClass="md:-top-[9rem] relative" />
 
         {/* Projects */}
@@ -156,10 +156,10 @@ const ServiceAndProjectPage = () => {
         </div>
         <div className="w-full flex flex-wrap my-5 md:my-10 gap-5 justify-center">
           {/* card projects */}
-          {dataProjects.map((data, index) => (
+          {dataProjects.map((data) => (
             <CardProject
+              key={data.id}
               name={data.name}
-              key={index}
               category={data.category}
               link={data.link}
               image={data.image}

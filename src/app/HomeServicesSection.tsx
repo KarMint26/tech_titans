@@ -26,7 +26,7 @@ function HomeServicesSection() {
         <Image
           src="/assets/home/img-hero2.png"
           alt="hero image"
-          className="scale-90 sm:scale-75 md:my-10 sm:my-0 lg:scale-100"
+          className="mt-3 lg:my-10 scale-100"
           width={700}
           height={600}
         />

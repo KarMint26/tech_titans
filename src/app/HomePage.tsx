@@ -9,7 +9,7 @@ import HomeFAQSection from "./HomeFAQSection";
 const HomePage = () => {
   return (
     <>
-      <div className="w-full h-fit px-3 sm:px-10 lg:px-14 pt-[135px] sm:pt-[150px] lg:pt-[180px] pb-12 sm:pb-16">
+      <div className="w-full h-fit px-5 sm:px-10 lg:px-14 pt-[135px] sm:pt-[150px] lg:pt-[180px] pb-12 sm:pb-16">
         <HomeHeroSection />
       </div>
       <HomeServicesSection />
