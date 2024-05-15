@@ -1,11 +1,31 @@
 import CardProject from "@/components/custom/CardProject";
-import {
-  ChevronRight,
-  ChevronRightIcon,
-  ChevronsLeftRightIcon,
-} from "lucide-react";
+import { ChevronRightIcon } from "lucide-react";
 import Link from "next/link";
 import React from "react";
+
+const dataProjects = [
+  {
+    id: 1,
+    name: "Wonderful Yogyakarta",
+    image: "/assets/services/web/wy.png",
+    category: "Website",
+    link: "https://wonderful-yogyakarta.techtitans.id",
+  },
+  {
+    id: 2,
+    name: "Optimal Mom - Pregnancy tracker",
+    image: "/assets/services/mobile/om.png",
+    category: "mobile",
+    link: "https://www.figma.com/design/8bTd1pt60GPKtphKQIh53C/Optimal-Mom---Pregnancy-tracker---moms-community---learning-center---baby-growth-tracker---Ecommers-(Community)?node-id=0%3A1&t=8qHNsjLjAQ034Jtg-1",
+  },
+  {
+    id: 3,
+    name: "Tech Titans IT solution",
+    image: "/assets/services/uiux/tt.jpg",
+    category: "UIUX",
+    link: "https://www.figma.com/design/UynMczGUHYMd8cS0vMXjT6/TechTitans---IT-Solutions?node-id=0%3A1&t=DNVZezD95beSfNPg-1",
+  },
+];
 
 function HomeProjectsSection() {
   return (
@@ -22,26 +42,15 @@ function HomeProjectsSection() {
         </p>
       </div>
       <div className="w-full flex flex-wrap my-5 md:my-10 gap-5 justify-center">
-        <CardProject
-          name="Educational Platform"
-          category="Web Design / UIUX Design"
-          link="https://www.youtube.com/watch?v=1fp_gdNKjV4"
-          image="/assets/services/p-ep.png"
-        />
-
-        <CardProject
-          name="Travel App Design"
-          category="Mobile Application"
-          link="https://www.youtube.com/watch?v=1fp_gdNKjV4"
-          image="/assets/services/p-tad.png"
-        />
-
-        <CardProject
-          name="Personal Page"
-          category="Web Application"
-          link="https://www.youtube.com/watch?v=1fp_gdNKjV4"
-          image="/assets/services/p-pp.png"
-        />
+        {dataProjects.map((data) => (
+          <CardProject
+            name={data.name}
+            category={data.category}
+            link={data.link}
+            image={data.image}
+            key={data.id}
+          />
+        ))}
       </div>
       <Link
         href="/service_and_project"

@@ -20,7 +20,7 @@ const dataServices = [
 ];
 function CardServices() {
   return dataServices.map((data, index) => (
-    <div className="p-5 max-w-96 bg-white border border-slate-300 rounded-xl flex justify-center items-center flex-col">
+    <div className="p-5 max-w-96 bg-white border border-slate-300 text-slate-800 rounded-xl flex justify-center items-center flex-col">
       <div className="p-5 rounded-full bg-main flex items-center justify-between">
         <Image src={data.image} alt={data.name} width={50} height={50} />
       </div>

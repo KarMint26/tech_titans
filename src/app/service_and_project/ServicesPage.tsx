@@ -6,12 +6,80 @@ import CardServices from "@/components/custom/CardServices";
 import Image from "next/image";
 import React from "react";
 import { BsBrowserChrome, BsWhatsapp } from "react-icons/bs";
-import { FaInternetExplorer } from "react-icons/fa";
-import { GoBrowser } from "react-icons/go";
 
+// name="Educational Platform"
+// category="Web Design / UIUX Design"
+// link="https://www.youtube.com/watch?v=1fp_gdNKjV4"
+// image="/assets/services/p-ep.png"
+const dataProjects = [
+  {
+    id: 1,
+    name: "Wonderful Yogyakarta",
+    image: "/assets/services/web/wy.png",
+    category: "Website",
+    link: "https://wonderful-yogyakarta.techtitans.id",
+  },
+  {
+    id: 2,
+    name: "Tranquilmind",
+    image: "/assets/services/web/t.png",
+    category: "Website",
+    link: "https://www.tranquilmind.my.id",
+  },
+  {
+    id: 3,
+    name: "Explorenias",
+    image: "/assets/services/web/e.png",
+    category: "Website",
+    link: "https://explorenias.my.id",
+  },
+  {
+    id: 4,
+    name: "SquareUp - Digital Product Studio",
+    image: "/assets/services/mobile/su.png",
+    category: "Mobile",
+    link: "https://www.figma.com/design/CGfkw0fFCGAJOwJrFT0E1G/SquareUp---Digital-Product-Studio-(Community)?node-id=3%3A53&t=K1UKfuJjHG3fg4HA-1",
+  },
+  {
+    id: 5,
+    name: "Go umkm",
+    image: "/assets/services/mobile/gu.png",
+    category: "Mobile",
+    link: "https://www.figma.com/design/d7boZ5o5auyLLk4cJTGTrK/GO-UMKM?node-id=1641%3A5443&t=LM3vgYeZvU6wE6RJ-1",
+  },
+  {
+    id: 6,
+    name: "Optimal Mom - Pregnancy tracker",
+    image: "/assets/services/mobile/om.png",
+    category: "mobile",
+    link: "https://www.figma.com/design/8bTd1pt60GPKtphKQIh53C/Optimal-Mom---Pregnancy-tracker---moms-community---learning-center---baby-growth-tracker---Ecommers-(Community)?node-id=0%3A1&t=8qHNsjLjAQ034Jtg-1",
+  },
+  {
+    id: 7,
+    name: "Tech Titans IT solution",
+    image: "/assets/services/uiux/tt.jpg",
+    category: "UIUX",
+    link: "https://www.figma.com/design/UynMczGUHYMd8cS0vMXjT6/TechTitans---IT-Solutions?node-id=0%3A1&t=DNVZezD95beSfNPg-1",
+  },
+  {
+    id: 8,
+    name: "calmMind",
+    image: "/assets/services/uiux/cm.png",
+    category: "UIUX",
+    link: "https://www.figma.com/design/h0RK5GMnLLQmh7dxZ5JrrG/CalmMindFix?node-id=0%3A1&t=LEDt8YpunXOXV4qx-1",
+  },
+  {
+    id: 9,
+    name: "Kasyr",
+    image: "/assets/services/uiux/ks.png",
+    category: "UIUX",
+    link: "https://www.figma.com/design/kHghspELxoT4TwW01UiHyg/Kasyr?node-id=0%3A1&t=0KavraniICMQch9u-1",
+  },
+];
 const ServiceAndProjectPage = () => {
   return (
     <>
+      {/* hero */}
       <div className="w-full h-fit px-8 sm:px-10 lg:px-14 pt-[135px] sm:pt-[150px] lg:pt-[180px] pb-12 sm:pb-16 flex items-center gap-2 flex-col md:flex-row">
         <Image
           src={"/assets/services/heroServices.png"}
@@ -21,7 +89,7 @@ const ServiceAndProjectPage = () => {
           className="w-full lg:scale-90 object-center md:w-1/2"
         />
         <div className="w-full md:w-1/2">
-          <h2 className="text-xl md:text-2xl lg:text-3xl text-center font-semibold">
+          <h2 className="text-xl md:text-2xl lg:text-3xl text-center md:text-left font-semibold">
             How To Order At <span className="text-main">Tech Titans</span>
           </h2>
 
@@ -46,6 +114,7 @@ const ServiceAndProjectPage = () => {
         </div>
       </div>
 
+      {/* services */}
       <div className="w-full h-fit px-8 sm:px-10 lg:px-14">
         <div className="w-full my-5 md:my-10">
           <p className="text-center font-semibold">Servcies</p>
@@ -61,6 +130,7 @@ const ServiceAndProjectPage = () => {
       <div className="w-full mt-10 md:mt-20 py-10 md:py-20 px-8 sm:px-10 lg:px-14 bg-main relative">
         <CardCountProjcets customClass="md:-top-[9rem] relative" />
 
+        {/* Projects */}
         <h2 className="text-center mt-10 md:mt-0 text-2xl md:text-3xl lg:text-4xl font-semibold text-white">
           Our Project
         </h2>
@@ -73,26 +143,16 @@ const ServiceAndProjectPage = () => {
           </p>
         </div>
         <div className="w-full flex flex-wrap my-5 md:my-10 gap-5 justify-center">
-          <CardProject
-            name="Educational Platform"
-            category="Web Design / UIUX Design"
-            link="https://www.youtube.com/watch?v=1fp_gdNKjV4"
-            image="/assets/services/p-ep.png"
-          />
-
-          <CardProject
-            name="Travel App Design"
-            category="Mobile Application"
-            link="https://www.youtube.com/watch?v=1fp_gdNKjV4"
-            image="/assets/services/p-tad.png"
-          />
-
-          <CardProject
-            name="Personal Page"
-            category="Web Application"
-            link="https://www.youtube.com/watch?v=1fp_gdNKjV4"
-            image="/assets/services/p-pp.png"
-          />
+          {/* card projects */}
+          {dataProjects.map((data, index) => (
+            <CardProject
+              name={data.name}
+              key={index}
+              category={data.category}
+              link={data.link}
+              image={data.image}
+            />
+          ))}
         </div>
       </div>
     </>

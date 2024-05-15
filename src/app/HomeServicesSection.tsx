@@ -1,19 +1,14 @@
 import CardCountProjcets from "@/components/custom/CardCountProjcets";
-import ItemBoxService from "@/components/custom/ItemBoxService";
 import Image from "next/image";
 import Link from "next/link";
 import React from "react";
-import { FaRegListAlt } from "react-icons/fa";
-import { GiPencilBrush } from "react-icons/gi";
-import { SlScreenSmartphone } from "react-icons/sl";
-import { TbWorld } from "react-icons/tb";
 
 function HomeServicesSection() {
   return (
     <div className="w-full h-fit px-8 sm:px-10 lg:px-14 py-12 sm:py-16 bg-main text-white">
       <div className="flex flex-col items-center justify-between gap-5 py-5 sm:flex-row">
         <div className="w-full text-center sm:text-left">
-          <h2 className="text-3xl leading-6 sm:text-4xl lg:text-5xl capitalize font-semibold my-3 sm:my-5">
+          <h2 className="text-3xl sm:text-4xl lg:text-5xl capitalize font-semibold my-3 sm:my-5">
             Various Services <br />{" "}
             <span className="mt-3">From tech titans</span>
           </h2>

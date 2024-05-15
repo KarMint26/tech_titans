@@ -21,7 +21,7 @@ function CardProject({
         alt="project 1"
         width={300}
         height={200}
-        className="w-full object-center"
+        className="w-full object-center bg-center bg-cover overflow-hidden"
       />
       <div className="flex items-center justify-between py-5">
         <div className="text-white">
