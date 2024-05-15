@@ -30,7 +30,7 @@ function CardProject({
           <h4 className="text-xl md:text-2xl font-semibold mb-5 mt-5">
             {name}
           </h4>
-          <div className="flex items-center gap-3">{category == "Website" ? <BsBrowserChrome /> : category == "mobile" ? <FaMobileScreen /> : <IoLogoFigma />} {category}</div>
+          <div className="flex items-center gap-3">{category == "Website" ? <BsBrowserChrome /> : category == "mobile" ? <FaMobileScreen /> : <IoLogoFigma />} {category.toUpperCase()}</div>
         </div>
         <Link
           href={link}
