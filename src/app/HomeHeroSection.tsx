@@ -22,9 +22,12 @@ const HomeHeroSection = () => {
             >
               Read more
             </Link>
-            <button className="text-main px-5 py-3 font-semibold flex gap-2">
+            <Link
+              href={"/service_and_project"}
+              className="text-main px-5 py-3 font-semibold flex gap-2"
+            >
               See Our Projects <ArrowRight />
-            </button>
+            </Link>
           </div>
         </div>
         <div className="md:w-[100rem] lg:w-auto flex gap-5 items-center">

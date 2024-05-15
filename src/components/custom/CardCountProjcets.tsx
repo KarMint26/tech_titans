@@ -16,7 +16,7 @@ function CardCountProjcets({ customClass }: { customClass?: string }) {
 
       <ItemBoxService name="Website" count={35} icon={<TbWorld />} />
 
-      <ItemBoxService name="Total Project" count={70} icon={<FaRegListAlt />} />
+      <ItemBoxService name="Total Project" count={75} icon={<FaRegListAlt />} />
     </div>
   );
 }

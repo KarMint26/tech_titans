@@ -37,8 +37,8 @@ function HomeProjectsSection() {
       <div className="flex mx-auto my-5 justify-center w-full md:w-[30rem]">
         <p className="text-white text-center">
           Explore our IT consulting services, from UI/UX Design, mobile
-          application and website application. Let's create amazing digital
-          experiences together.
+          applications and website applications. Here are our public version
+          projects
         </p>
       </div>
       <div className="w-full flex flex-wrap my-5 md:my-10 gap-5 justify-center">
@@ -53,7 +53,7 @@ function HomeProjectsSection() {
         ))}
       </div>
       <Link
-        href="/service_and_project"
+        href="/service_and_project#projects"
         className="px-3 py-3 rounded-full m-auto bg-white inline-flex justify-between gap-3 items-center font-semibold dark:text-gray-800"
       >
         <span className="pl-3">See More Project</span>{" "}

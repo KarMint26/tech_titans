@@ -67,7 +67,7 @@ function HomeTestimonialsSection() {
       <p className="text-center mt-3">What Our Clients Says</p>
       <section>
         <div className="max-w-6xl md:px-5 lg:px-6 py-10 mx-auto">
-          <main className="relative z-20 w-full mt-8 md:flex md:items-center xl:mt-12">
+          <main className="relative z-10 w-full mt-8 md:flex md:items-center xl:mt-12">
             <div className="absolute w-full bg-main -z-10 md:h-[29rem] lg:h-96 rounded-2xl"></div>
 
             <div className="w-full p-6 bg-main lg:flex md:items-center rounded-2xl md:bg-transparent md:p-0 lg:px-12 md:justify-evenly">

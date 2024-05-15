@@ -5,6 +5,7 @@ import CardProject from "@/components/custom/CardProject";
 import CardServices from "@/components/custom/CardServices";
 import Image from "next/image";
 import React from "react";
+import { BiChat } from "react-icons/bi";
 import { BsBrowserChrome, BsWhatsapp } from "react-icons/bs";
 
 // name="Educational Platform"
@@ -82,7 +83,7 @@ const ServiceAndProjectPage = () => {
       {/* hero */}
       <div className="w-full h-fit px-8 sm:px-10 lg:px-14 pt-[135px] sm:pt-[150px] lg:pt-[180px] pb-12 sm:pb-16 flex items-center gap-2 flex-col md:flex-row">
         <Image
-          src={"/assets/services/heroServices.png"}
+          src={"/assets/services/heroService.gif"}
           alt="services"
           width={500}
           height={500}
@@ -93,13 +94,13 @@ const ServiceAndProjectPage = () => {
             How To Order At <span className="text-main">Tech Titans</span>
           </h2>
 
-          <ol className="relative border-s mt-5 border-gray-200 dark:border-gray-700">
+          <ol className="relative border-s mt-10 border-gray-200 dark:border-gray-700">
             <li className="mb-10 ms-6">
               <span className="absolute flex items-center justify-center w-6 h-6 bg-blue-100 rounded-full -start-3 ring-8 ring-white dark:ring-gray-900 dark:bg-blue-900">
                 <BsBrowserChrome />
               </span>
               <h3 className="flex items-center mb-1 text-lg font-semibold text-gray-900 dark:text-white">
-                Masuk Website Tech Titans pada browser
+                Open the Tech Titans website in your browser
               </h3>
             </li>
             <li className="mb-10 ms-6">
@@ -107,7 +108,15 @@ const ServiceAndProjectPage = () => {
                 <BsWhatsapp />
               </span>
               <h3 className="mb-1 text-lg font-semibold text-gray-900 dark:text-white">
-                Klik tombol WhatsApp
+                Click the WhatsApp button on the bottom right side
+              </h3>
+            </li>
+            <li className="mb-10 ms-6">
+              <span className="absolute flex items-center justify-center w-6 h-6 bg-blue-100 rounded-full -start-3 ring-8 ring-white dark:ring-gray-900 dark:bg-blue-900">
+                <BiChat />
+              </span>
+              <h3 className="mb-1 text-lg font-semibold text-gray-900 dark:text-white">
+                Discuss your desired project with us on whatsapp
               </h3>
             </li>
           </ol>
@@ -131,15 +140,18 @@ const ServiceAndProjectPage = () => {
         <CardCountProjcets customClass="md:-top-[9rem] relative" />
 
         {/* Projects */}
-        <h2 className="text-center mt-10 md:mt-0 text-2xl md:text-3xl lg:text-4xl font-semibold text-white">
+        <h2
+          id="projects"
+          className="text-center mt-10 md:mt-0 text-2xl md:text-3xl lg:text-4xl font-semibold text-white"
+        >
           Our Project
         </h2>
 
         <div className="flex mx-auto my-5 justify-center w-full md:w-[30rem]">
           <p className="text-white text-center">
             Explore our IT consulting services, from UI/UX Design, mobile
-            application and website application. Let's create amazing digital
-            experiences together.
+            applications and website applications. Here are our public version
+            projects
           </p>
         </div>
         <div className="w-full flex flex-wrap my-5 md:my-10 gap-5 justify-center">

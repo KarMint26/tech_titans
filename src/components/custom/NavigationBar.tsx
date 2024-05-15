@@ -27,7 +27,7 @@ export default function Navbar({
       {/* Mobile and Tablet Version */}
       <div
         onClick={() => setActiveNav(false)}
-        className={`bg-background/20 backdrop-blur-sm lg:hidden w-[30%] sm:w-[40%] h-screen fixed right-0 top-0 z-[1000] transition-all duration-300 ${
+        className={`bg-white/80 backdrop-blur-md lg:hidden w-[30%] sm:w-[40%] h-screen fixed right-0 top-0 z-[1000] transition-all duration-300 ${
           activeNav
             ? "opacity-100 -translate-x-0"
             : "opacity-0 -translate-x-[1200px]"
